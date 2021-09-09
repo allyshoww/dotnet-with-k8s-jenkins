@@ -1,0 +1,15 @@
+/Users/allysono/Documents/Particular/helloworld/App/bin/Debug/net5.0/NetCore.Docker.deps.json
+/Users/allysono/Documents/Particular/helloworld/App/bin/Debug/net5.0/NetCore.Docker.runtimeconfig.json
+/Users/allysono/Documents/Particular/helloworld/App/bin/Debug/net5.0/NetCore.Docker.runtimeconfig.dev.json
+/Users/allysono/Documents/Particular/helloworld/App/bin/Debug/net5.0/NetCore.Docker.dll
+/Users/allysono/Documents/Particular/helloworld/App/bin/Debug/net5.0/ref/NetCore.Docker.dll
+/Users/allysono/Documents/Particular/helloworld/App/bin/Debug/net5.0/NetCore.Docker.pdb
+/Users/allysono/Documents/Particular/helloworld/App/obj/Debug/net5.0/NetCore.Docker.csproj.AssemblyReference.cache
+/Users/allysono/Documents/Particular/helloworld/App/obj/Debug/net5.0/NetCore.Docker.GeneratedMSBuildEditorConfig.editorconfig
+/Users/allysono/Documents/Particular/helloworld/App/obj/Debug/net5.0/NetCore.Docker.AssemblyInfoInputs.cache
+/Users/allysono/Documents/Particular/helloworld/App/obj/Debug/net5.0/NetCore.Docker.AssemblyInfo.cs
+/Users/allysono/Documents/Particular/helloworld/App/obj/Debug/net5.0/NetCore.Docker.csproj.CoreCompileInputs.cache
+/Users/allysono/Documents/Particular/helloworld/App/obj/Debug/net5.0/NetCore.Docker.dll
+/Users/allysono/Documents/Particular/helloworld/App/obj/Debug/net5.0/ref/NetCore.Docker.dll
+/Users/allysono/Documents/Particular/helloworld/App/obj/Debug/net5.0/NetCore.Docker.pdb
+/Users/allysono/Documents/Particular/helloworld/App/obj/Debug/net5.0/NetCore.Docker.genruntimeconfig.cache
