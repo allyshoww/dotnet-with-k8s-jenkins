@@ -1,5 +1,5 @@
 FROM mcr.microsoft.com/dotnet/aspnet:5.0
-LABEL Project=Dotnet-Jenkins
+LABEL Project=Dotnet-Jenkins-k8s
 COPY bin/Release/net5.0/publish/ App/
 WORKDIR /App
 ENTRYPOINT ["dotnet", "NetCore.Docker.dll"]
