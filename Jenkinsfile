@@ -6,7 +6,7 @@ pipeline {
         script {
             //withCredentials([usernamePassword(credentialsId: "${docker-login}", passwordVariable: 'PASS', usernameVariable: 'USER')]) {
             //sh 'git clone https://github.com/allyshoww/dotnet-with-k8s-jenkins.git'
-            sh 'whoami'
+            sh 'pwd'
             //sh 'docker login -u "${docker-user}" -p "${docker-pw}"'
             //sh 'cd dotnet-with-k8s-jenkins && pwd && kubectl apply -f deployment.yaml'
             //sh 'sleep 60'
