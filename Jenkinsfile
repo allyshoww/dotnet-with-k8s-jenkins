@@ -4,7 +4,7 @@ pipeline {
   stage('Clone') {
       steps {
         script {
-            sh 'sudo rm -rf /dotnet-with-k8s-jenkins && git clone https://github.com/allyshoww/dotnet-with-k8s-jenkins.git'
+            sh 'rm -rf /dotnet-with-k8s-jenkins && git clone https://github.com/allyshoww/dotnet-with-k8s-jenkins.git'
             sh 'pwd'
             //sh 'docker login -u "${docker-user}" -p "${docker-pw}"'
             //sh 'cd dotnet-with-k8s-jenkins && pwd && kubectl apply -f deployment.yaml'
