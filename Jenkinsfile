@@ -16,7 +16,7 @@ pipeline {
   stage('Stage 2') {
       steps {
         script {
-          echo 'Stage Teste-02 post build actions and other tasks'
+          echo 'Stage Teste-02'
         }
       }
     }
