@@ -6,8 +6,8 @@ pipeline {
         script {
             //sh 'rm -rf /dotnet-with-k8s-jenkins && git clone https://github.com/allyshoww/dotnet-with-k8s-jenkins.git'
             sh 'whoami'
-            sh 'docker login -u "${docker-user}" -p "${docker-pw}"'
-            //sh 'cd dotnet-with-k8s-jenkins && pwd && kubectl apply -f deployment.yaml'
+            //sh 'docker login -u "${docker-user}" -p "${docker-pw}"'
+            sh 'cd dotnet-with-k8s-jenkins && pwd && kubectl apply -f deployment.yaml'
             //sh 'sleep 60'
             //sh 'kubectl get pods'
         }   
