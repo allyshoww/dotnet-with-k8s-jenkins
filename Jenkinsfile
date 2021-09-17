@@ -1,6 +1,10 @@
 pipeline {
   agent any
   stages {
+  stage('Building pipeline'){
+     steps{
+        echo "Running Build - ${env.BUILD_TAG} on ${env.JENKINS_URL}"
+          }
   stage('Clone') {
       steps {
         script {
@@ -16,7 +20,7 @@ pipeline {
         }   
     }
 }
-  stage('Stage 2') {
+  stage('Building Pipeline') {
       steps {
         script {
           echo 'Stage Teste-02'
