@@ -20,7 +20,7 @@ pipeline {
       steps {
         script {
           sh ('printenv')
-          echo 'Running Build - '${env.BUILD_TAG}' on '${env.JENKINS_URL}''
+          echo 'Running Build - '$env.BUILD_TAG' on '$env.JENKINS_URL''
         }
       }
     }
