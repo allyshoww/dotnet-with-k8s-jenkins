@@ -7,7 +7,7 @@ pipeline {
             sh ('whoami')
             sh ('sudo rm -rf dotnet-with-k8s-jenkins/ && git clone https://github.com/allyshoww/dotnet-with-k8s-jenkins')
             //sh 'sudo docker login -u "${docker-user}" -p "${docker-pw}"'
-            sh ('cd dotnet-with-k8s-jenkins && ls -lah')
+            sh ('cd dotnet-with-k8s-jenkins && dotntet publish -C Release')
             sh ('docker build . -t allysono/hw:latest')
             sh ('sudo docker push allysono/hw:latest')
             sh ('pwd && ls -lah && sudo kubectl apply -f deployment.yaml')
