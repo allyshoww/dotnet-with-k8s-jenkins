@@ -11,7 +11,7 @@ pipeline {
             sh ('sudo docker build . -t allysono/hw:latest')
             sh ('sudo docker push allysono/hw:latest')
             sh ('pwd && ls -lah && sudo kubectl apply -f deployment.yaml')
-            sh ('sudo kubectl set image deployment/corecounter-deployment corecounter=allysono/hw:latest')
+            //sh ('sudo kubectl set image deployment/corecounter-deployment corecounter=allysono/hw:latest')
             sh ('sudo kubectl get pods')
         }   
     }
