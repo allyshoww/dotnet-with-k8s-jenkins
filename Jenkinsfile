@@ -19,7 +19,7 @@ pipeline {
   stage('Building Pipeline') {
       steps {
         script {
-          echo 'Running Build - ${env.BUILD_TAG} on ${env.JENKINS_URL}'
+          echo 'Running Build - "${env.BUILD_TAG}" on "${env.JENKINS_URL}"'
         }
       }
     }
