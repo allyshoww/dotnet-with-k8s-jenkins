@@ -5,7 +5,7 @@ pipeline {
       steps {
         script {
             sh 'whoami'
-            sh 'git clone https://github.com/allyshoww/dotnet-with-k8s-jenkins'
+            sh 'sudo rm -rf /dotnet-with-k8s-jenkins && git clone https://github.com/allyshoww/dotnet-with-k8s-jenkins'
             //sh 'sudo docker login -u "${docker-user}" -p "${docker-pw}"'
             sh ('ls -lah')
             sh ('docker build . -t allysono/hw:latest')
