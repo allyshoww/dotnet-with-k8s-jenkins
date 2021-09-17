@@ -4,12 +4,12 @@ pipeline {
   stage('Clone') {
       steps {
         script {
-            //sh 'rm -rf /dotnet-with-k8s-jenkins && git clone https://github.com/allyshoww/dotnet-with-k8s-jenkins.git'
-            //sh 'whoami'
-            //sh 'docker login -u "${docker-user}" -p "${docker-pw}"'
-            sh 'cd dotnet-with-k8s-jenkins && pwd && sudo kubectl apply -f deployment.yaml'
-            //sh 'sleep 60'
-            //sh 'kubectl get pods'
+            sh 'whoami'
+            sh 'docker login -u "${docker-user}" -p "${docker-pw}"'
+            sh 'cd dotnet-with-k8s-jenkins && pwd && dotnet publish -C release && sudo kubectl apply -f deployment.yaml'
+            sh 'sudo kubectl set image deployment/corecounter-deployment corecounter=allysono/hw:latest'
+            sh 'sleep 60'
+            sh 'sudo kubectl get pods'
         }   
     }
 }
