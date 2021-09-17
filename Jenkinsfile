@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Building pipeline'){
       steps{
-        echo "Running Build - ${env.BUILD_TAG} on ${env.JENKINS_URL}"
+          echo "Running Build - ${env.BUILD_TAG} on ${env.JENKINS_URL}"
         }
     stage('Clone') {
       steps {
