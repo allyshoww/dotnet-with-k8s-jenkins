@@ -10,7 +10,7 @@ pipeline {
             sh ('cd dotnet-with-k8s-jenkins && sudo dotnet publish -c Release && sudo docker build . -t allysono/hw:latest')
             //sh ('sudo docker build . -t docker.io/allysono/hw:latest')
             sh ('sudo docker push allysono/hw:latest')
-            sh ('pwd && ls -lah && sudo kubectl apply -f deployment.yaml')
+            sh ('pwd && ls -lah && sudo kubectl delete deployment corecounter-deployment && sudo kubectl apply -f deployment.yaml')
             //sh ('sudo kubectl set image deployment/corecounter-deployment corecounter=allysono/hw:latest')
             sh ('sudo kubectl get pods')
         }   
