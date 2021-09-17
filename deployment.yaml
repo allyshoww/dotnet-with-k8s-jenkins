@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: corecounter
-        image: docker.io/allysono/hw:latest
+        image: allysono/hw:latest
         imagePullPolicy: Always
 
