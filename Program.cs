@@ -12,7 +12,7 @@ namespace NetCore.Docker
             while (max == -1 || counter < max)
             {
                 Console.WriteLine($"Counter: {++counter}");
-                await Task.Delay(1000);
+                await Task.Delay(60000);
             }
         }
     }
