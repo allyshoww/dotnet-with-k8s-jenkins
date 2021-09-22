@@ -7,12 +7,12 @@ namespace NetCore.Docker
     {
         static async Task Main(string[] args)
         {
-            var counter = 500;
+            var counter = 5;
             var max = args.Length != 0 ? Convert.ToInt32(args[0]) : -1;
             while (max == -1 || counter < max)
             {
                 Console.WriteLine($"Counter: {++counter}");
-                await Task.Delay(30000);
+                await Task.Delay(1000);
             }
         }
     }
